@@ -4,31 +4,43 @@
   import Carrousel from "../components/Carrousel.vue"
   import Card from "../components/Card.vue"
   import PopOverFilter from "../components/PopOverFilter.vue"
+  import WhatsApp from "../components/WhatsApp.vue"
+
   import { TagIcon, CalendarIcon, CurrencyDollarIcon, MagnifyingGlassIcon, TruckIcon, TrashIcon } from '@heroicons/vue/24/outline'
 </script>
 
 <template>
-  <Header />
-  <div class="flex justify-center gap-2 w-full pb-4">
-    <PopOverFilter title="Categoria"><TruckIcon /></PopOverFilter>
-    <PopOverFilter title="Marca"><TagIcon /></PopOverFilter>
-    <PopOverFilter title="Preço"><CurrencyDollarIcon /></PopOverFilter>
-    <PopOverFilter title="Ano"><CalendarIcon /></PopOverFilter>
-    <PopOverFilter title="Quilometragem"><MagnifyingGlassIcon /></PopOverFilter>
-    <button>Limpar filtros</button>
-  </div>
-  <main class="bg-gray-100">
-    <div class="container mx-auto">
-      <div class="py-4">
-        <span>20 veículos encontrados</span>
-      </div>
-      <div class="flex wrap gap-2">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
+    <Header />
+    <div class="flex flex-wrap justify-center w-full gap-2 p-4 shadow-lg">
+        <PopOverFilter title="Categoria"><TruckIcon class="h-5 w-5"/></PopOverFilter>
+        <PopOverFilter title="Marca"><TagIcon class="h-5 w-5"/></PopOverFilter>
+        <PopOverFilter title="Preço"><CurrencyDollarIcon class="h-5 w-5"/></PopOverFilter>
+        <PopOverFilter title="Ano"><CalendarIcon class="h-5 w-5"/></PopOverFilter>
+        <PopOverFilter title="KM"><MagnifyingGlassIcon class="h-5 w-5"/></PopOverFilter>
+        <button class="items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:border-b">
+          <div class="flex gap-1">
+            <TrashIcon class="h-5 w-5"/><span>Limpar filtros</span>
+          </div>
+        </button>
     </div>
-  </main>
+    <main class="flex justify-center bg-gray-100">
+      <div class="container mx-auto flex justify-center flex-col">
+        <div class="py-4">
+            <span class="text-sm font-semibold leading-6 text-gray-900">20 veículos encontrados</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
+        </div>
+    </main>
+    <WhatsApp />
 </template>

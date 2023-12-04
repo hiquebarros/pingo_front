@@ -2,8 +2,8 @@
     <div>
         <carousel :items-to-show="1">
           <slide v-for="slide in 3" :key="slide">
-            <div class="flex content-center items-center h-[250px]">
-                <p>CAPA {{ slide }}</p>
+            <div class="flex content-center items-center">
+              <img class="w-full" src="https://web.archive.org/web/20190104084224im_/http://pingoveiculos.com.br/marca.php?img=fotos/carro4314.jpg"/>
             </div>
           </slide>
       
@@ -29,4 +29,30 @@
     },
   }
   </script>
+
+<style>
+.carousel__item {
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__slide {
+  max-height: 450px;
+}
+
+img{
+  object-fit: fit;
+}
+
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  background-color: #d1ad04;
+  border-radius: 10%
+  
+}
+</style>
   

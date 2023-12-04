@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'whatsapp': "#25D366",
+        'primary': "#c30318",
+        'secondary': "#d1ad04"
+      }
+    },
   },
   plugins: [],
 }

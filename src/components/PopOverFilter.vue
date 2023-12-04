@@ -46,8 +46,6 @@
     SquaresPlusIcon,
   } from '@heroicons/vue/24/outline'
 
-  import { defineProps, reactive } from 'vue'
-
     defineProps({
     title: String,
     icon: String
