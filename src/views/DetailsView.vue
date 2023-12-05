@@ -8,10 +8,10 @@ import ToolBar from "../components/ToolBar.vue"
 </script>
 
 <template>
-    <div class="">
+    <div class="flex flex-col h-screen">
         <Header />
-        <main class="bg-gray-100 h-5/6">
-            <div class="container mx-auto">
+        <main class="flex-1 bg-gray-100">
+            <div class="container mx-auto lg:px-12 xl:px-60">
                 <ToolBar/>
                 <div class="grid lg:grid-cols-12 gap-4 py-4">
                     <div class="lg:col-span-7">

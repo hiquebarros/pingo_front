@@ -10,6 +10,7 @@
 </script>
 
 <template>
+  <div class="flex flex-col h-screen">
     <Header />
     <div class="flex flex-wrap justify-center w-full gap-2 p-4 shadow-lg">
         <PopOverFilter title="Categoria"><TruckIcon class="h-5 w-5"/></PopOverFilter>
@@ -23,8 +24,8 @@
           </div>
         </button>
     </div>
-    <main class="flex justify-center bg-gray-100">
-      <div class="container mx-auto flex justify-center flex-col">
+    <main class="flex-1 justify-center bg-gray-100">
+      <div class="container mx-auto lg:px-12 xl:px-60 flex justify-center flex-col">
         <div class="py-4">
             <span class="text-sm font-semibold leading-6 text-gray-900">20 veículos encontrados</span>
           </div>
@@ -43,4 +44,5 @@
         </div>
     </main>
     <WhatsApp />
+  </div>
 </template>
