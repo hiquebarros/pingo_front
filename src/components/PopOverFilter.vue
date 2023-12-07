@@ -1,8 +1,11 @@
 <template>
-    <Popover class="relative border rounded-full p-2 hover:bg-gray-100">
-      <PopoverButton class="inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-        <slot></slot>
-        <span>{{title}}</span>
+    <Popover class="relative flex-1 border rounded-full p-2 hover:bg-gray-100">
+      <PopoverButton class="flex justify-between items-center w-full gap-x-1 px-2 text-sm font-semibold leading-6 text-gray-900">
+
+        <div class="flex items-center gap-2">
+          <slot></slot>
+          <span>{{title}}</span>
+        </div>
         <ChevronDownIcon class="h-5 w-5" aria-hidden="true" />
       </PopoverButton>
   

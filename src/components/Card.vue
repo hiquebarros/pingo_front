@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-full md:max-w-[300px] rounded overflow-hidden bg-white">
+    <div class="flex flex-col rounded overflow-hidden bg-white">
         <div class="w-full" @click="router.push('details/123')">
             <img class="cursor-pointer p-2" src="https://web.archive.org/web/20190104085110im_/http://pingoveiculos.com.br/marca.php?img=fotos/carro4052.jpg" alt="Sunset in the mountains">
         </div>

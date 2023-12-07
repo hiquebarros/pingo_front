@@ -45,6 +45,7 @@
 
 img{
   object-fit: fit;
+  border-radius: 2%;
 }
 
 .carousel__prev,

@@ -12,24 +12,26 @@
 <template>
   <div class="flex flex-col h-screen">
     <Header />
-    <div class="flex flex-wrap justify-center w-full gap-2 p-4 shadow-lg">
-        <PopOverFilter title="Categoria"><TruckIcon class="h-5 w-5"/></PopOverFilter>
-        <PopOverFilter title="Marca"><TagIcon class="h-5 w-5"/></PopOverFilter>
-        <PopOverFilter title="Preço"><CurrencyDollarIcon class="h-5 w-5"/></PopOverFilter>
-        <PopOverFilter title="Ano"><CalendarIcon class="h-5 w-5"/></PopOverFilter>
-        <PopOverFilter title="KM"><MagnifyingGlassIcon class="h-5 w-5"/></PopOverFilter>
-        <button class="items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:border-b">
-          <div class="flex gap-1">
-            <TrashIcon class="h-5 w-5"/><span>Limpar filtros</span>
-          </div>
-        </button>
+    <div class="container mx-auto lg:px-12 xl:px-60 flex justify-center flex-col">
+      <div class="flex flex-wrap justify-center w-full gap-2 py-4">
+          <PopOverFilter title="Categoria"><TruckIcon class="h-5 w-5"/></PopOverFilter>
+          <PopOverFilter title="Marca"><TagIcon class="h-5 w-5"/></PopOverFilter>
+          <PopOverFilter title="Preço"><CurrencyDollarIcon class="h-5 w-5"/></PopOverFilter>
+          <PopOverFilter title="Ano"><CalendarIcon class="h-5 w-5"/></PopOverFilter>
+          <PopOverFilter title="KM"><MagnifyingGlassIcon class="h-5 w-5"/></PopOverFilter>
+          <button class="items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 hover:border-b">
+            <div class="flex gap-1">
+              <TrashIcon class="h-5 w-5"/><span>Limpar filtros</span>
+            </div>
+          </button>
+      </div>
     </div>
     <main class="flex-1 justify-center bg-gray-100">
       <div class="container mx-auto lg:px-12 xl:px-60 flex justify-center flex-col">
         <div class="py-4">
             <span class="text-sm font-semibold leading-6 text-gray-900">20 veículos encontrados</span>
           </div>
-          <div class="flex flex-wrap gap-2">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center gap-2">
             <Card />
             <Card />
             <Card />
