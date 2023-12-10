@@ -1,7 +1,7 @@
 <template>
     <div>
         <carousel :items-to-show="1">
-          <slide v-for="slide in 3" :key="slide">
+          <slide v-for="slide in 6" :key="slide">
             <div class="flex content-center items-center">
               <img class="w-full" src="https://web.archive.org/web/20190104084224im_/http://pingoveiculos.com.br/marca.php?img=fotos/carro4314.jpg"/>
             </div>
@@ -9,7 +9,9 @@
       
           <template #addons>
             <navigation />
-            <pagination />
+            <div class="flex justify-center">
+              <pagination />
+            </div>
           </template>
         </carousel>
     </div>
@@ -41,6 +43,14 @@
 
 .carousel__slide {
   max-height: 450px;
+}
+
+.carousel__pagination{
+  border-radius: 5%;
+  background-color: #d1ad04;
+  position: absolute;
+  bottom: 5px;
+  padding: 5px;
 }
 
 img{
