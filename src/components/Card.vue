@@ -5,8 +5,7 @@
         </div>
         <div class="px-6 py-4">
             <div class="font-bold text-xl">Fiat Uno</div>
-            <div class="font-bold text-md">1.0</div>
-            <span>Ano/Modelo 2020/2020 • 69.236 KM • Manaus, AM</span>
+            <span>2020/2020 • 69.236 KM</span>
             <h3 class="font-bold text-xl text-primary">R$ 47.180</h3>
         </div>
         <div class="px-6">
