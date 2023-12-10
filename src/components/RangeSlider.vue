@@ -79,17 +79,23 @@ const onInput = ({ target }) => {
 
 </script>
 <template>
-    <div ref="slider" class="custom-slider minmax">
-        <div class="minmax-indicator"></div>
-        <input ref="inputMin" type="range" name="min" id="min" :min="min" :max="max" :value="minValue" :step="step"
-            @input="onInput" />
-        <input ref="inputMax" type="range" name="max" id="max" :min="min" :max="max" :value="maxValue" :step="step"
-            @input="onInput" />
+    <div class="py-4">
+        <div ref="slider" class="custom-slider minmax">
+            <div class="minmax-indicator"></div>
+            <input ref="inputMin" type="range" name="min" id="min" :min="min" :max="max" :value="minValue" :step="step"
+                @input="onInput" />
+            <input ref="inputMax" type="range" name="max" id="max" :min="min" :max="max" :value="maxValue" :step="step"
+                @input="onInput" />
+        </div>
     </div>
-    <div class="minmax-inputs">
-        <span>Mínimo</span>
-        <input type="number" :step="step" v-model="sliderMinValue" />
-        <span>Máximo</span>
-        <input type="number" :step="step" v-model="sliderMaxValue" />
-    </div>
+        <div class="minmax-inputs">
+            <div class="flex flex-col">
+                <span>Mínimo:</span>
+                <input type="number" :step="step" v-model="sliderMinValue" />
+            </div>
+            <div class="flex flex-col">
+                <span>Máximo:</span>
+                <input type="number" :step="step" v-model="sliderMaxValue" />
+            </div>
+        </div>
 </template>

@@ -5,7 +5,7 @@
         </div>
         <div class="px-6 py-4">
             <div class="font-bold text-xl">Fiat Uno</div>
-            <span>2020/2020 • 69.236 KM</span>
+            <span>2020/2020 • 69.236 KM • Automático</span>
             <h3 class="font-bold text-xl text-primary">R$ 47.180</h3>
         </div>
         <div class="px-6">

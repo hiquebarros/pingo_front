@@ -13,15 +13,22 @@
             </li>
             <li class="flex gap-2 items-center">
                 <CheckIcon class="h-5 w-5" /> Lorem Ipsum
-        </li>
-        <li class="flex gap-2 items-center">
-            <CheckIcon class="h-5 w-5" /> Lorem Ipsum
-        </li>
-        <li class="flex gap-2 items-center">
-            <CheckIcon class="h-5 w-5" /> Lorem Ipsum
-        </li>
-        <li class="flex gap-2 items-center">
-            <CheckIcon class="h-5 w-5" /> Lorem Ipsum
-        </li>
-    </ul>
-</div></template>
+            </li>
+            <li class="flex gap-2 items-center">
+                <CheckIcon class="h-5 w-5" /> Lorem Ipsum
+            </li>
+            <li class="flex gap-2 items-center">
+                <CheckIcon class="h-5 w-5" /> Lorem Ipsum
+            </li>
+            <li class="flex gap-2 items-center">
+                <CheckIcon class="h-5 w-5" /> Lorem Ipsum
+            </li>
+        </ul>
+    </div>
+</template>
+
+<script setup>
+import {
+    CheckIcon
+} from '@heroicons/vue/24/outline'
+</script>

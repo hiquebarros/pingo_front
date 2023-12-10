@@ -1,10 +1,7 @@
 <script setup>
 import Header from "../components/Header.vue"
-import Banner from "../components/Banner.vue"
 import Carrousel from "../components/Carrousel.vue"
-import Card from "../components/Card.vue"
 import ToolBar from "../components/ToolBar.vue"
-import { CheckIcon } from '@heroicons/vue/20/solid'
 import DetailsCard from "../components/DetailsCard.vue"
 import CarItemsCard from "../components/CarItemsCard.vue"
 import SpecsCard from "../components/SpecsCard.vue"

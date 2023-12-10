@@ -28,6 +28,9 @@ const sliderMax = ref(150);
             <TruckIcon class="h-5 w-5" />
           </template>
           <template #content>
+            <div>
+              <h3 class="text-lg font-base">Categoria</h3>
+            </div>
             <CategoriesList />
           </template>
         </PopOverFilter>
@@ -36,6 +39,9 @@ const sliderMax = ref(150);
             <TagIcon class="h-5 w-5" />
           </template>
           <template #content>
+            <div>
+                <h3 class="text-lg font-base">Marca</h3>
+              </div>
             <BrandsList />
           </template>
         </PopOverFilter>
@@ -82,9 +88,12 @@ const sliderMax = ref(150);
     <main class="flex-1 justify-center bg-gray-100">
       <div class="container mx-auto lg:px-12 xl:px-60 flex justify-center flex-col">
         <div class="py-4">
-          <span class="text-sm font-semibold leading-6 text-gray-900">20 veículos encontrados</span>
+          <span class="text-sm font-semibold leading-6 text-gray-900">9 veículos encontrados</span>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center gap-2 pb-8">
+          <Card />
+          <Card />
+          <Card />
           <Card />
           <Card />
           <Card />
