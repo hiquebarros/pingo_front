@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded shadow-lg bg-white">
+    <div class="rounded shadow-sm bg-white">
         <div class="flex flex-col justify-between p-4 h-full">
             <div class="flex flex-col pb-4">
                 <div class="font-bold text-xl">Fiat Uno</div>

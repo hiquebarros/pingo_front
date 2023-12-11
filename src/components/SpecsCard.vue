@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded shadow-lg bg-white mt-4 p-4">
+    <div class="rounded shadow-sm bg-white mt-4 p-4">
         <h3 class="font-semibold text-xl mb-4">Items e acessórios</h3>
         <div class="grid grid-cols-3">
             <div class="flex flex-col mb-2">
