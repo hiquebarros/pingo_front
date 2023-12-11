@@ -5,7 +5,7 @@
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img @click="router.push({ path: '/' })" class="h-14 w-auto" src="https://web.archive.org/web/20181225204429im_/http://pingoveiculos.com.br/imgsite/ACIMA.png" alt="" />
+            <img @click="router.push({ path: '/' })" class="h-16 w-auto" src="../assets/pingo.png" alt="" />
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -49,6 +49,7 @@ import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 import router from "../router/index.js"
+import logo from "../assets/pingo.png"
 
 const navigation = [
   { name: 'Home', href: '#' },

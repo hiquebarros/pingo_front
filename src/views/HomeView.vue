@@ -106,4 +106,5 @@ const sliderMax = ref(150);
     <Footer />
     <WhatsApp />
   </div>
+  
 </template>

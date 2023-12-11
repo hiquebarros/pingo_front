@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'whatsapp': "#25D366",
+        'whatsapp': "#128c7e",
+        'whatsappDark': "#075e54",
+        'whatsappLight': "#25d366",
         'primary': "#c30318",
         'secondary': "#d1ad04"
       }

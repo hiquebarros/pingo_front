@@ -47,7 +47,7 @@
 
 .carousel__pagination{
   border-radius: 5%;
-  background-color: #d1ad04;
+  background-color: lightgrey;
   position: absolute;
   bottom: 5px;
   padding: 5px;
@@ -61,7 +61,7 @@ img{
 .carousel__prev,
 .carousel__next {
   box-sizing: content-box;
-  background-color: #d1ad04;
+  background-color: lightgrey;
   border-radius: 10%
   
 }
